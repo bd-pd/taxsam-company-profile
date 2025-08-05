@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+  /* Warna Primer */
+  --primary-color: #d56501;  
+  --primary-light: #fcb006;      
+  --primary-dark: #242424;       
+}

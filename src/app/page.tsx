@@ -70,7 +70,6 @@ export default function Home()
               </a>
               <div className="dropdown-content">
                 <div className="submenu">
-                  <a href="#">Join Us</a>
                   <a href="#">Internship</a>
                 </div>
               </div>
@@ -86,7 +85,16 @@ export default function Home()
       </header>
 
       <section className="hero">
-        <img src="/assets/images/City.jpg" alt="City" id="myImage" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video"
+        >
+          <source src="/assets/videos/city.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="hero-content">
           <h1>
             Navigating Taxes,
@@ -96,6 +104,31 @@ export default function Home()
           <a href="#" className="cta-button">
             See What Matters
           </a>
+          <a href="#" className='book-button'>
+            Book a Consultation
+          </a>
+        </div>
+        {/* Hero Footer */}
+        <div className="hero-footer">
+            <div className="hero-footer-icons">
+            <a href="#" className="hero-icon" aria-label="LinkedIn">
+              <img src="/assets/icons/linked.svg" alt="LinkedIn" width={28} height={28} />
+            </a>
+            <a href="#" className="hero-icon" aria-label="YouTube">
+              <img src="/assets/icons/youtube.svg" alt="YouTube" width={28} height={28} />
+            </a>
+            <a href="#" className="hero-icon" aria-label="Instagram">
+              <img src="/assets/icons/instagram.svg" alt="Instagram" width={28} height={28} />
+            </a>
+            <a href="#" className="hero-icon" aria-label="Email">
+              <img src="/assets/icons/email.svg" alt="Email" width={28} height={28} />
+            </a>
+            </div>
+          <div className="hero-footer-text">
+            <span className="hero-footer-brand">TAXSAM.CO</span>
+            <span className="hero-footer-smarter"> SMARTER </span>
+            <span className="hero-footer-desc">TAX CONSULTANT</span>
+          </div>
         </div>
       </section>
     </>
