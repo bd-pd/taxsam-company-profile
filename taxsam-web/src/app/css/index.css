@@ -156,7 +156,8 @@ body {
   overflow: hidden;
 }
 
-#myVideo {
+
+#myImage {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -181,7 +182,7 @@ body {
 
 @font-face {
   font-family: 'Wolf';
-  src: url('/assets/font/Rosaline.otf') format('truetype');
+  src: url('/assets/fonts/Rosaline.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
