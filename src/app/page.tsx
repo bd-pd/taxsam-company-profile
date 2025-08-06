@@ -1,91 +1,14 @@
 'use client'
 import './css/index.css';
 import Script from 'next/script';
+import Footer from './global/Footer';
+import Header from './global/header';
 
 export default function Home() 
 {
   return (
     <>
-      <header className="navbar">
-        <div className="navbar-container">
-          <div className="logo">
-            <img src="/assets/images/TaxsamLogo.png" alt="TAXSAM.CO Logo" />
-          </div>
-          
-
-          <nav className="nav-links">
-            <a href="#">ABOUT US</a>
-            <a href="#">OUR CLIENTS</a>
-
-            <div className="dropdown">
-              <a href="#">
-                PRODUCTS & SERVICES <span style={{ fontSize: "10px" }}>&#x25BE;</span>
-              </a>
-              <div className="dropdown-content">
-                <div className="submenu">
-                  <a href="#">
-                    Taxam.co Services{" "}
-                    <span style={{ fontSize: "10px" }}>&#x25B6;</span>
-                  </a>
-                  <div className="sub-dropdown">
-                    <a href="#">Tax Attorney</a>
-                    <a href="#">Tax Legal Opinion</a>
-                    <a href="#">Tax Compliance</a>
-                    <a href="#">Transfer Pricing</a>
-                  </div>
-                </div>
-
-                <div className="submenu">
-                  <a href="#">
-                    Bigsam.co Services{" "}
-                    <span style={{ fontSize: "10px" }}>&#x25B6;</span>
-                  </a>
-                  <div className="sub-dropdown">
-                    <a href="#">Payroll Service</a>
-                    <a href="#">Accounting</a>
-                  </div>
-                </div>
-
-                <div className="submenu">
-                  <a href="#">
-                    Products Digital{" "}
-                    <span style={{ fontSize: "10px" }}>&#x25B6;</span>
-                  </a>
-                  <div className="sub-dropdown">
-                    <a href="#">Tax Learning Center</a>
-                    <a href="#">Tax Base</a>
-                    <a href="#">
-                      <b>
-                        Business Learning Center
-                        <br />
-                        (Coming Soon)
-                      </b>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="dropdown">
-              <a href="#">
-                TAXSAM CAREER <span style={{ fontSize: "10px" }}>&#x25BE;</span>
-              </a>
-              <div className="dropdown-content">
-                <div className="submenu">
-                  <a href="#">Internship</a>
-                </div>
-              </div>
-            </div>
-
-            <a href="#">INSIGHT</a>
-          </nav>
-
-          <div className="login-btn">
-            <a href="#">LOGIN</a>
-          </div>
-        </div>
-      </header>
-
+      <Header />
       <section className="hero">
         <video
           autoPlay
@@ -133,8 +56,8 @@ export default function Home()
           </div>
         </div>
       </section>
-
       <section className="clients-section">
+        <div style={{ margin: "88px 0" }} />
         <div className="clients-container">
           <h2 className="clients-title">
             <span className="clients-title-highlight">RELIABLE</span> CLIENTS & PARTNERS
@@ -243,10 +166,155 @@ export default function Home()
           </div>
         </div>
       </section>
-
-      <section>
-        
+      
+      {/* Section Our Services */}
+      <section className="services-section">
+        <div className="services-container">
+          <div className="services-header">
+            <div className="services-header-row">
+              <div className="services-header-left">
+                <span className="services-brand-line"></span>
+                <span className="services-brand-text">[ TAXSAM.CO ]</span>
+              </div>
+              <div className="services-header-right">
+                <h2 className="services-title">Our Services</h2>
+                <div className="services-subtitle">
+                  Your Partner in Tax Consulting and Innovative Business Solutions
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="services-cards">
+            {/* Tax Consulting Card */}
+            <div className="services-card services-card-tax">
+              <div className="services-card-img-container">
+                <img
+                  src="/assets/images/material/jabat tangan.jpg"
+                  alt="Tax Consulting"
+                  className="services-card-img"
+                />
+              </div>
+              <div className="services-card-content">
+                <h3 className="services-card-title">Tax Consulting</h3>
+                <div className="services-card-desc">
+                  Comprehensive Tax Consulting Services for Businesses and Individuals
+                </div>
+                <a href="#" className="services-card-btn">Learn More</a>
+              </div>
+            </div>
+            
+            {/* Business Solution Card */}
+            <div className="services-card services-card-business">
+              <div className="services-card-img-container">
+                <img
+                  src="/assets/images/material/analisis.jpg"
+                  alt="Business Solution"
+                  className="services-card-img"
+                />
+              </div>
+              <div className="services-card-content">
+                <h3 className="services-card-title">Business Solution</h3>
+                <div className="services-card-desc">
+                  Tailored Business Solutions to Drive Growth, Efficiency, and Sustainable Success
+                </div>
+                <a href="#" className="services-card-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      {/* Section About/Highlight */}
+      <section className="about-highlight-section">
+        <div className="about-highlight-bg"></div>
+        <div className="about-highlight-content">
+          <div className="about-highlight-title-small">Who We Are</div>
+          <h2 className="about-highlight-title-big">We Provide Quality Tax Services</h2>
+          <div className="about-highlight-desc">
+            TAXSAM.CO, a tax attorney and consultant firm founded in 2015, offers tax and business solutions for both corporations and individuals in Indonesia. Led by S.R Soejono, a tax expert with over 30 years of experience, their team of professionals provides a range of services.
+          </div>
+          <a href="#" className="about-highlight-btn">DISCOVER OUR VALUES</a>
+        </div>
+      </section>
+      {/* Section Our product */}
+      <section className="product-section">
+        <div style={{ margin: "250px 0" }} />
+        <div className="product-container"></div>
+        <div className="product-header">
+          <div className="services-header-row">
+              <div className="services-header-left">
+                <span className="services-brand-line"></span>
+                <span className="services-brand-text">[ TAXSAM.CO ]</span>
+              </div>
+              <div className="services-header-right">
+                <h2 className="services-title">Our Products</h2>
+                <div className="services-subtitle">
+                 The Best Investment for Your Tax Future Starts Here
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      {/* Section TLC Learning Center */}
+      
+      <section className="tlc-section">
+        <video
+          className="tlc-bg-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/assets/videos/TLC video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="tlc-content">
+          <div className="tlc-title-small">MASTERING TAXES TOGETHER</div>
+          <h2 className="tlc-title-big">TAXSAM LEARNING CENTER (TLC)</h2>
+          <div className="tlc-desc">
+            Taxsam.co Learning Center is dedicated to providing individuals, businesses, and tax professionals with the resources and education needed to navigate the complex world of taxation with confidence.
+          </div>
+          <a href="#" className="tlc-btn">Explore TLC</a>
+          <span className="tlc-live-badge">LIVE</span>
+        </div>
+      </section>
+      <section className="tlc-section">
+        <video
+          className="tlc-bg-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/assets/videos/baca buku.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="tlc-content">
+          <div className="tlc-title-small">ACCES YOUR TAX LIBRARY</div>
+          <h2 className="tlc-title-big">TAXSAM TAXBASE</h2>
+          <div className="tlc-desc">
+            Unlock a world of tax knowledge with our comprehensive database. Start your free trial today and experience the power of our tax library database!
+          </div>
+          <a href="#" className="tlc-btn">Discover Taxbase</a>
+        
+        </div>
+      </section>
+      <section className="tlc-section tlc-section-taxbase">
+        <div className="tlc-bg-slideshow">
+          <img src="/assets/images/material/tax1.jpg" alt="Taxbase Slide 1" className="tlc-slide tlc-slide-1" />
+          <img src="/assets/images/material/tax2.jpg" alt="Taxbase Slide 2" className="tlc-slide tlc-slide-2" />
+        </div>
+        <div className="tlc-content">
+          <div className="tlc-title-small">SMART IN-HOUSE TRAINING SOLUTIONS.​</div>
+          <h2 className="tlc-title-big">IN HOUSE TRAINING</h2>
+          <div className="tlc-desc">
+           In-house tax and business training isn't just about individual development – it's about building a more knowledgeable, confident, and cohesive team. By learning together, your employees will develop a shared understanding and a stronger ability to collaborate effectively. Empower your internal experts and foster a culture of continuous growth within your organization.
+          </div>
+          <a href="#" className="tlc-btn">Contact US</a>
+        </div>
+      </section>
+      <Footer />
       <Script 
         src="/js/index.js" 
         strategy="lazyOnload"

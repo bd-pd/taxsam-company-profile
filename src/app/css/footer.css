@@ -1,0 +1,228 @@
+.global-footer {
+  background: #222;
+  color: #fff;
+  padding: 0 0 24px 0;
+  width: 100%;
+  margin-top: 0;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+}
+
+.footer-cta {
+  text-align: center;
+  padding: 48px 0 32px 0;
+}
+
+.footer-cta-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  color: #fff;
+  font-family: 'Wolf', Arial, sans-serif;
+}
+
+.footer-cta-line {
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--secondary-color);
+  margin: 0 auto 18px auto;
+  border-radius: 2px;
+}
+
+.footer-cta-highlight {
+  color: var(--secondary-color);
+  font-weight: 900;
+}
+
+.footer-cta-btn {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 14px 38px;
+  border-radius: 4px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  transition: background 0.2s;
+  border: none;
+}
+
+.footer-cta-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.footer-menu-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 32px 0 32px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-menu-col {
+  min-width: 160px;
+}
+
+.footer-menu-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 18px;
+  font-family: 'Wolf', Arial, sans-serif;
+}
+
+.footer-menu-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-menu-col ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.footer-menu-col ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-social-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.footer-social-row a img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(0.2) brightness(1.1);
+  transition: filter 0.2s;
+}
+
+.footer-social-row a:hover img {
+  filter: none;
+}
+
+.footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 32px auto 0 auto;
+  padding: 0 16px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-left, .footer-bottom-mid, .footer-bottom-right {
+  flex: 1;
+  min-width: 220px;
+  font-size: 0.98rem;
+}
+
+.footer-address-title {
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}
+
+.footer-address-detail {
+  color: #fff;
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+}
+
+.footer-contact-list div {
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 0.98rem;
+}
+
+.footer-contact-list a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer-contact-list a:hover {
+  color: var(--primary-color);
+}
+
+.footer-bottom-logos-title {
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+    font-size: 0.98rem;
+    margin-left: 60px;
+}
+
+.footer-bottom-logos-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.footer-bottom-logos-row img {
+    height: 130px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(0.2) brightness(1.1);
+    transition: filter 0.2s;
+    margin-left: 0; /* Hapus margin kiri agar gambar tetap di posisi grid */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-bottom-logos-row img:hover {
+  filter: none;
+}
+
+.footer-logo-row {
+  text-align: center;
+  margin: 32px 0 12px 0;
+}
+
+.footer-logo-main {
+  height: 54px;
+  width: auto;
+  object-fit: contain;
+  filter: none;
+}
+
+.global-footer-copy {
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .footer-menu-row, .footer-bottom-row {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 24px 0;
+  }
+  .footer-logo-row {
+    margin: 24px 0 8px 0;
+  }
+}
