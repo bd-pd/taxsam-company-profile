@@ -6,7 +6,7 @@ import Header from '../global/header';
 export default function AboutPage() {
   return (
     <>
-      <Header />
+      <Header active="about" />
       <section className="about-section">
         <video
           className="about-bg-video"
@@ -51,7 +51,367 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <Footer />
+      <section className="about-vision-section">
+        <div className="about-vision-container">
+          <div className="about-vision-img">
+            <img src="/assets/images/rocket-launch.jpg" alt="Rocket Launch - Vision TAXSAM.CO" />
+          </div>
+          <div className="about-vision-box">
+            <h2 className="about-vision-title">Our Vision & Mission</h2>
+            <div className="about-vision-desc">
+              Taxsam.co builds trust by making businesses more efficient and effective in handling legal compliance and tax rules. This transformation helps them become reliable and smart companies, skilled in business growth and managing all tax matters. Taxsam.co aims to provide the most comprehensive, fastest, and highest quality tax services, offering competitive solutions both in Indonesia and internationally. Their commitment is to deliver tax services with exceptional accuracy and speed, providing top-tier and rapid access to tax information for everyone. Ultimately, Taxsam.co seeks to offer tax services in innovative and groundbreaking ways.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="org-culture-section">
+        <div className="org-culture-header-row">
+          <div className="org-culture-brand">
+            <span className="org-culture-line"></span>
+            <span>[ TAXSAM.CO ]</span>
+          </div>
+          <div className="org-culture-title-col">
+            <h2 className="org-culture-title">Organizational Culture</h2>
+            <div className="org-culture-subtitle">What Makes Us Unique?</div>
+          </div>
+        </div>
+        <div className="org-culture-cards-grid">
+          <div className="org-culture-card">Structured, fast, efficient, and effective decision-making;</div>
+          <div className="org-culture-card">Adaptive, innovative, and collaborative;</div>
+          <div className="org-culture-card">Today's decision is better than tomorrow's perfect decision;</div>
+          <div className="org-culture-card">We reward high performers;</div>
+          <div className="org-culture-card">Deliver fast; no need for perfection; iterate at every stage; adjust to customer expectations.</div>
+        </div>
+        <div className="org-culture-bottom-row">
+          <div className="org-culture-img">
+            <img src="/assets/images/Taxsamorganization.jpg" alt="Organizational Culture Meeting" />
+          </div>
+          <div className="org-culture-principal">
+            <h2 className="org-culture-principal-title">Principal Idea</h2>
+            <div className="org-culture-principal-desc">
+              Our main philosophy is the excellence of business processes that are always adaptive, innovative, and collaboration-based in order to improve the efficiency and effectiveness of the company; This philosophy is taken based on a mixture of continental European and Anglo-Saxon bureaucratic models that prioritize structural and systematic values but remain adaptive, innovative, and fast in decision-making; This philosophy is taken based on the lack of human resource capabilities and work ethics in the majority of HR in Indonesia, so that superior business processes become very important.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="about-quote-section">
+        <div className="about-quote-container">
+          <div className="about-quote-left">
+            <div className="about-quote-text">
+              In this world nothing can be said to be certain, except death and taxes.
+            </div>
+            <div className="about-quote-line"></div>
+            <div className="about-quote-author">
+              <b>Benjamin Franklin</b>
+            </div>
+            <div className="about-quote-source">
+              Letter to Jean-Baptiste Le Roy, 1789
+            </div>
+          </div>
+          <div className="about-quote-right">
+            <div className="about-quote-img-wrap">
+              <img src="/assets/images/dolar.jpg" alt="Benjamin Franklin Money" className="about-quote-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="team-section">
+        <div className="team-header">
+          <h2 className="team-title">Meet Our Team</h2>
+          <div className="team-underline"></div>
+          <div className="team-subtitle">Board of Director</div>
+        </div>
+        <div className="team-carousel">
+          <div className="team-cards">
+            <div className="team-card">
+              <img src="/assets/images/team/Rises-2.jpg" alt="Dr. Aulia Rizki Wicaksono, S.H., MA., BKP - Director/Lawyer" className="team-card-img" />
+              <div className="team-card-name">
+                <b>Dr.AULIA RIZKI WICAKSONO,<br />S.H., MA., BKP</b>
+              </div>
+              <div className="team-card-role">Director/Lawyer</div>
+            </div>
+            <div className="team-card">
+              <img src="/assets/images/team/Foto-_0008_Wahyono-Eko-P-scaled-1.jpg" alt="Wahyono E.P, SE., MA - Director/Lawyer" className="team-card-img" />
+              <div className="team-card-name">
+                <b>WAHYONO E.P, SE., MA</b>
+              </div>
+              <div className="team-card-role">Director/Lawyer</div>
+            </div>
+          </div>
+          </div>
+          <div className="mb-20"></div>
+          <div className="team-underline"></div>
+          <div className="team-subtitle">Board of Management</div>
+          <div className="mb-10"></div>
+          <div className="team-cards">
+            <div className="team-card">
+              <img src="/assets/images/team/Foto-_0016_Faza-Al-Ghifari-scaled-1.jpg" alt="Masayu Nurul Aini, S.H., M.H. - Board of Management" className="team-card-img" />
+              <div className="team-card-name">
+              <b>FAZA AL GHIFARI,<br /> S.T.</b>
+              </div>
+              <div className="team-card-role">General Manager</div>
+            </div>
+            <div className="team-card">
+              <img src="/assets/images/team/Foto-_0020_Radhitya-Utama-scaled-1.jpg" alt="Rizki Amalia, S.H., M.H. - Board of Management" className="team-card-img" />
+              <div className="team-card-name">
+              <b>RADHITYA UTAMA,<br /> S.E.</b>
+              </div>
+              <div className="team-card-role">Board of Management</div>
+            </div>
+          </div>
+
+        <div className="mb-20"></div>
+          <div className="team-underline"></div>
+          <div className="team-subtitle">Board of Human Development</div>
+          <div className="mb-10"></div>
+          <div className="team-cards">
+            <div className="team-card">
+              <img src="/assets/images/team/Foto-_0014_Dwiko-Wolma-Putera-scaled-1.jpg" alt="Dwiko Wolma P., S.M. - Head of Human Development" className="team-card-img" />
+              <div className="team-card-name">
+                <b>DWIKO WOLMA P., S.M.</b>
+              </div>
+              <div className="team-card-role">Head of Human Development</div>
+            </div>
+            <div className="team-card">
+              <img src="/assets/images/team/Foto-_0006_Muhammad-Aulia-scaled-1.jpg" alt="Muhammad Aulia, S.Ds. - Human Development" className="team-card-img" />
+              <div className="team-card-name">
+                <b>MUHAMMAD AULIA, S.Ds.</b>
+              </div>
+              <div className="team-card-role">Human Development</div>
+            </div>
+            <div className="team-card">
+              <img src="/assets/images/team/Foto-_0034_Afra-Khairunnisa-scaled-1.jpg" alt="Afra Khairunnisa, S.Psi. - Human Development" className="team-card-img" />
+              <div className="team-card-name">
+                <b>AFRA KHAIRUNNISA, S.Psi.</b>
+              </div>
+              <div className="team-card-role">Human Development</div>
+            </div>
+            <div className="team-card">
+              <img src="/assets/images/team/Foto-_0023_Salsabila-Aura-Putri-scaled-1.jpg" alt="Salsabila Aura Putri, S.Psi. - Human Development" className="team-card-img" />
+              <div className="team-card-name">
+                <b>SALSABILA AURA PUTRI, S.Psi.</b>
+              </div>
+              <div className="team-card-role">Human Development</div>
+            </div>
+            </div>
+
+            <div className="mb-20"></div>
+              <div className="team-underline"></div>
+              <div className="team-subtitle">Board of Tax Law Analyst</div>
+              <div className="mb-10"></div>
+              <div className="team-cards">
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-_0018_Kiagoos-Adhimas-scaled-1.jpg" alt="Kiagoos Adhimas, S.H. - Head of Tax Law Analyst" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>KIAGOOS ADHIMAS,<br />S.H.</b>
+                </div>
+                <div className="team-card-role">Head of Tax Law Analyst</div>
+              </div>
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-_0013_Septian-Martadinata-scaled-1.jpg" alt="Septian M., S.H. - Tax Law Analyst Officer" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>SEPTIAN M.,<br />S.H.</b>
+                </div>
+                <div className="team-card-role">Tax Law Analyst Officer</div>
+              </div>
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-_0025_Muhammad-Salahuddin-scaled-1.jpg" alt="Muhammad Salahuddin, S.H. - Tax Law Analyst" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>MUHAMMAD SALAHUDDIN,<br />S.H.</b>
+                </div>
+                <div className="team-card-role">Tax Law Analyst</div>
+              </div>
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-_0024_Ahmadie-Azra-Isnain-scaled-1.jpg" alt="Ahmadie Azra Isnain, S.H. - Tax Law Analyst" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>AHMADIE AZRA ISNAIN,<br />S.H.</b>
+                </div>
+                <div className="team-card-role">Tax Law Analyst</div>
+              </div>
+            </div>
+            <div className="mb-20"></div>
+              <div className="team-underline"></div>
+              <div className="team-subtitle">Board of Tax Compliance</div>
+              <div className="mb-10"></div>
+              <div className="team-cards">
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-_0004_Albert-Permana-scaled-1.jpg" alt="Albert Permana, S.T. - Head of Tax Compliance" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>ALBERT PERMANA, S.T.</b>
+                </div>
+                <div className="team-card-role">Head of Tax Compliance</div>
+              </div>
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-Website_0007_Hans.jpg" alt="Handreansyah Wibowo, S.Ak - Tax Compliance" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>HANDREANSYAH WIBOWO, S.Ak</b>
+                </div>
+                <div className="team-card-role">Tax Compliance</div>
+              </div>
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-Website_0006_Lutfiyah.jpg" alt="Luthfiyah Safitri, S.Ak - Tax Compliance" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>LUTHFIYAH SAFITRI, S.Ak</b>
+                </div>
+                <div className="team-card-role">Tax Compliance</div>
+              </div>
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-Website_0008_Kemas.jpg" alt="Kemas Muhammad Farhan, S.Ab - Tax Compliance" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>KEMAS MUHAMMAD FARHAN, S.Ab</b>
+                </div>
+                <div className="team-card-role">Tax Compliance</div>
+              </div>
+            </div>
+            <div className="mb-20"></div>
+              <div className="team-underline"></div>
+              <div className="team-subtitle">Board of Client & Relations</div>
+              <div className="mb-10"></div>
+              <div className="team-cards">
+                <div className="team-card">
+                  <img src="/assets/images/team/Foto-_0015_Rizki-Hermawan-scaled-1.jpg" alt="Rizki Hermawan, S.H. - Head of Marketing & Client Relationship" className="team-card-img" />
+                  <div className="team-card-name">
+                    <b>RIZKI HERMAWAN, S.H.</b>
+                  </div>
+                  <div className="team-card-role">Head of Marketing & Client Relationship</div>
+                </div>
+                <div className="team-card">
+                  <img src="/assets/images/team/Foto-_0011_Firmandi-Fazri-scaled-1.jpg" alt="Firmandi Fazri, S.H. - Manager Client & Relations" className="team-card-img" />
+                  <div className="team-card-name">
+                    <b>FIRMANDI FAZRI, S.H.</b>
+                  </div>
+                  <div className="team-card-role">Manager Client & Relations</div>
+                </div>
+                <div className="team-card">
+                  <img src="/assets/images/team/Foto-_0012_Mubdi-Mulya-Isfahami-scaled-1.jpg" alt="Mubdi Mulya I., S.Tr.Log., M.M. - Marketing Manager" className="team-card-img" />
+                  <div className="team-card-name">
+                    <b>MUBDI MULYA I., S.Tr.Log., M.M.</b>
+                  </div>
+                  <div className="team-card-role">Marketing Manager</div>
+                </div>
+                <div className="team-card">
+                  <img src="/assets/images/team/Foto-_0022_Hanifah-Hindra-Putri-scaled-1.jpg" alt="Hanifah Hindra Putri, S.M. - Client Relations" className="team-card-img" />
+                  <div className="team-card-name">
+                    <b>HANIFAH HINDRA PUTRI, S.M.</b>
+                  </div>
+                  <div className="team-card-role">Client Relations</div>
+                </div>
+              </div>
+            <div className="mb-20"></div>
+              <div className="team-underline"></div>
+              <div className="team-subtitle">Board of Business Development</div>
+              <div className="mb-10"></div>
+              <div className="team-cards">
+                <div className="team-card">
+                  <img src="/assets/images/team/Foto-_0019_Ageng-Harris-Signori-scaled-1.jpg" alt="Ageng Harris S, S.Ikom - Head of Business Development" className="team-card-img" />
+                  <div className="team-card-name">
+                    <b>AGENG HARRIS S, S.Ikom</b>
+                  </div>
+                  <div className="team-card-role">Head of Business Development</div>
+                </div>
+                <div className="team-card">
+                  <img src="/assets/images/team/Foto-Website_0004_Olija-191x300.jpg" alt="Olija Nur Khalissa, S.S. - Multimedia" className="team-card-img" />
+                  <div className="team-card-name">
+                    <b>OLIJA NUR KHALISSA, S.S.</b>
+                  </div>
+                  <div className="team-card-role">Multimedia</div>
+                </div>
+                <div className="team-card">
+                  <img src="/assets/images/team/Foto-Website_0003_Rio.jpg" alt="Rio C Andesta, S.T. - Marketing" className="team-card-img" />
+                  <div className="team-card-name">
+                    <b>RIO C ANDESTA, S.T.</b>
+                  </div>
+                  <div className="team-card-role">Marketing</div>
+                </div>
+                <div className="team-card">
+                  <img src="/assets/images/team/Foto-_0028_Hasbi-Lazawardi-scaled.jpg" alt="Hasbi Lazawardi - Product Manager" className="team-card-img" />
+                  <div className="team-card-name">
+                    <b>HASBI LAZAWARDI</b>
+                  </div>
+                  <div className="team-card-role">Product Manager</div>
+                </div>
+              </div>
+            <div className="mb-20"></div>
+              <div className="team-underline"></div>
+              <div className="team-subtitle">Board of Business Analyst</div>
+              <div className="mb-10"></div>
+              <div className="team-cards">
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-_0017_Priandoko-Satryobud-scaled-1.jpg" alt="Priandoko Satryobudi, S.T - Head of Business Analyst" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>PRIANDOKO SATRYOBUDI,<br />S.T</b>
+                </div>
+                <div className="team-card-role">Head of Business Analyst</div>
+              </div>
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-Website_0002_Guritno.jpg" alt="Gurinto Suro Amijoyo, S.T, MBA - Business Analyst" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>GURINTO SURO AMIJOYO,<br />S.T, MBA</b>
+                </div>
+                <div className="team-card-role">Business Analyst</div>
+              </div>
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-Website_0001_Dyah.jpg" alt="Dyah Puspita Sari, S.T, MBA - Business Analyst" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>DYAH PUSPITA SARI,<br />S.T, MBA</b>
+                </div>
+                <div className="team-card-role">Business Analyst</div>
+              </div>
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-Website_0009_Dhiku.jpg" alt="Muhammad Dhiku Widyosekti, S.T, MBA - Business Analyst" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>MUHAMMAD DHIKU WIDYOSEKTI,<br />S.T, MBA</b>
+                </div>
+                <div className="team-card-role">Business Analyst</div>
+              </div>
+            </div>
+            <div className="mb-20"></div>
+              <div className="team-underline"></div>
+              <div className="team-subtitle">Committee Of International and Growth</div>
+              <div className="mb-10"></div>
+              <div className="team-cards">
+              <div className="team-card">
+                <img src="/assets/images/team/Foto-_0038_Verrel-Hatmosroyo-scaled-1.jpg" alt="Muhammad Dhiku Widyosekti, S.T, MBA - Business Analyst" className="team-card-img" />
+                <div className="team-card-name">
+                  <b>VERREL HATMOSROYO,<br />S.Tr.Par.</b>
+                </div>
+                <div className="team-card-role">Board of CIG</div>
+              </div>
+            </div>
+            <div className="mb-20"></div>
+            <div className="team-header">
+              <div className="team-underline"></div>
+              <h2 className="team-title">Meet Our Team</h2>
+            </div>
+            {/* Tambahkan card di bawah sini */}
+                <div className="team-cards">
+                  <div className="team-card">
+                    <img src="/assets/images/team/Foto-_0038_Verrel-Hatmosroyo-scaled-1.jpg" alt="Verrel Hatmosroyo, S.Tr.Par. - Board of CIG" className="team-card-img" />
+                    <div className="team-card-name">
+                      <b>VERREL HATMOSROYO,<br />S.Tr.Par.</b>
+                    </div>
+                    <div className="team-card-role">Board of CIG</div>
+                  </div>
+                  <div className="team-card">
+                    <img src="/assets/images/team/Foto-_0039_Anggita-Putri-Rahmawati-scaled-1.jpg" alt="Anggita Putri Rahmawati, S.Tr.Par. - Board of CIG" className="team-card-img" />
+                    <div className="team-card-name">
+                      <b>ANGGITA PUTRI RAHMAWATI,<br />S.Tr.Par.</b>
+                    </div>
+                    <div className="team-card-role">Board of CIG</div>
+                  </div>
+                  <div className="team-card">
+                    <img src="/assets/images/team/Foto-_0040_Muhammad-Farhan-Akbar-scaled-1.jpg" alt="Muhammad Farhan Akbar, S.Tr.Par. - Board of CIG" className="team-card-img" />
+                    <div className="team-card-name">
+                      <b>MUHAMMAD FARHAN AKBAR,<br />S.Tr.Par.</b>
+                    </div>
+                    <div className="team-card-role">Board of CIG</div>
+                  </div>
+                </div>
+              
+    </section>
+    
+    {/* ...existing code... */}
+    <Footer />
     </>
   );
 }

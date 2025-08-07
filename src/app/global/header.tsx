@@ -1,7 +1,11 @@
 import React from 'react';
 import '../css/header.css';
 
-export default function Header() {
+interface HeaderProps {
+  active?: string;
+}
+
+export default function Header({ active }: HeaderProps) {
   return (
     <header className="navbar">
       <div className="navbar-container">
@@ -11,10 +15,10 @@ export default function Header() {
           </a>
         </div>
         <nav className="nav-links">
-            <a href="/about">ABOUT US</a>
-          <a href="#">OUR CLIENTS</a>
+          <a href="/about" className={active === 'about' ? 'active' : ''}>ABOUT US</a>
+          <a href="#" className={active === 'clients' ? 'active' : ''}>OUR CLIENTS</a>
           <div className="dropdown">
-            <a href="#">
+            <a href="#" className={active === 'products' ? 'active' : ''}>
               PRODUCTS & SERVICES <span style={{ fontSize: "10px" }}>&#x25BE;</span>
             </a>
             <div className="dropdown-content">
@@ -60,7 +64,7 @@ export default function Header() {
             </div>
           </div>
           <div className="dropdown">
-            <a href="#">
+            <a href="#" className={active === 'career' ? 'active' : ''}>
               TAXSAM CAREER <span style={{ fontSize: "10px" }}>&#x25BE;</span>
             </a>
             <div className="dropdown-content">
@@ -69,7 +73,7 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <a href="#">INSIGHT</a>
+          <a href="#" className={active === 'insight' ? 'active' : ''}>INSIGHT</a>
         </nav>
         <div className="login-btn">
           <a href="#">LOGIN</a>
