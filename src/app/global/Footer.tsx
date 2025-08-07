@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/footer.css';
+import { CiFacebook,CiLinkedin,CiYoutube,CiInstagram  } from "react-icons/ci";
 
 export default function Footer() {
   return (
@@ -50,10 +51,10 @@ export default function Footer() {
         <div className="footer-menu-col">
           <div className="footer-menu-title">Social</div>
           <div className="footer-social-row">
-            <a href="#"><img src="/assets/icons/linked.svg" alt="LinkedIn" /></a>
-            <a href="#"><img src="/assets/icons/youtube.svg" alt="YouTube" /></a>
-            <a href="#"><img src="/assets/icons/instagram.svg" alt="Instagram" /></a>
-            <a href="#"><img src="/assets/icons/facebook.png" alt="Facebook" /></a>
+            <a href="#"><CiInstagram size={32} color="#fff" /></a>
+            <a href="#"><CiYoutube size={32} color="#fff" /></a>
+            <a href="#"><CiLinkedin size={32} color="#fff" /></a>
+            <a href="#"><CiFacebook size={32} color="#fff" /></a>
           </div>
         </div>
       </div>

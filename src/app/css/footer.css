@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/assets/fonts/Roboto/Lato-Black.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 .global-footer {
   background: #222;
   color: #fff;
@@ -114,8 +120,18 @@
   transition: filter 0.2s;
 }
 
-.footer-social-row a:hover img {
-  filter: none;
+
+.footer-social-row a svg {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  transition: color 0.2s, box-shadow 0.2s;
+}
+
+.footer-social-row a:hover svg {
+  color: var(--secondary-color);
+  box-shadow: 0 0 0 2px var(--primary-color);
+  border-radius: 50%;
 }
 
 .footer-bottom-row {
@@ -145,6 +161,8 @@
   color: #fff;
   font-size: 0.98rem;
   margin-bottom: 8px;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
 }
 
 .footer-contact-list div {

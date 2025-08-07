@@ -6,10 +6,12 @@ export default function Header() {
     <header className="navbar">
       <div className="navbar-container">
         <div className="logo">
-          <img src="/assets/images/TaxsamLogo.png" alt="TAXSAM.CO Logo" />
+          <a href="/">
+            <img src="/assets/images/TaxsamLogo.png" alt="TAXSAM.CO Logo" />
+          </a>
         </div>
         <nav className="nav-links">
-          <a href="#">ABOUT US</a>
+            <a href="/about">ABOUT US</a>
           <a href="#">OUR CLIENTS</a>
           <div className="dropdown">
             <a href="#">
