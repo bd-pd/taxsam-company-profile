@@ -16,7 +16,7 @@ export default function Header({ active }: HeaderProps) {
         </div>
         <nav className="nav-links">
           <a href="/about" className={active === 'about' ? 'active' : ''}>ABOUT US</a>
-          <a href="#" className={active === 'clients' ? 'active' : ''}>OUR CLIENTS</a>
+          <a href="/our_clients" className={active === 'clients' ? 'active' : ''}>OUR CLIENTS</a>
           <div className="dropdown">
             <a href="#" className={active === 'products' ? 'active' : ''}>
               PRODUCTS & SERVICES <span style={{ fontSize: "10px" }}>&#x25BE;</span>
@@ -28,8 +28,8 @@ export default function Header({ active }: HeaderProps) {
                   <span style={{ fontSize: "10px" }}>&#x25B6;</span>
                 </a>
                 <div className="sub-dropdown">
-                  <a href="#">Tax Attorney</a>
-                  <a href="#">Tax Legal Opinion</a>
+                    <a href="/taxsam.co_service/tax_attorney">Tax Attorney</a>
+                  <a href="/taxsam.co_service/tax_legal_opinion">Tax Legal Opinion</a>
                   <a href="#">Tax Compliance</a>
                   <a href="#">Transfer Pricing</a>
                 </div>

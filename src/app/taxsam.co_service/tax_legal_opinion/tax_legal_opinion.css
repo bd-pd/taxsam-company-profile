@@ -1,0 +1,247 @@
+.tax-legalopinion-whatwedo-section {
+  background: #f6f6f8;
+  padding: 80px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tax-legalopinion-whatwedo-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 36px auto;
+}
+
+.tax-legalopinion-whatwedo-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1 0;
+}
+
+.tax-legalopinion-whatwedo-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 700;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.tax-legalopinion-whatwedo-line {
+  display: inline-block;
+  width: 120px;
+  height: 4px;
+  background: var(--secondary-color);
+  margin-right: 18px;
+  border-radius: 2px;
+}
+
+.tax-legalopinion-whatwedo-right {
+  flex: 2 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tax-legalopinion-whatwedo-title {
+  font-size: 3rem;
+  font-family: 'Wolf', Arial, sans-serif;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  text-align: left;
+  width: 100%;
+  padding-left: 180px;
+}
+
+.tax-legalopinion-whatwedo-desc {
+  font-size: 1.3rem;
+  color: #444;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 0;
+  text-align: left;
+  width: 100%;
+    padding-left: 180px;
+}
+
+.tax-legalopinion-whatwedo-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 32px;
+  max-width: 1400px;
+  margin: 36px auto 0 auto;
+  width: 100%;
+}
+
+.tax-legalopinion-whatwedo-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  padding: 38px 24px;
+  font-size: 1.18rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  color: #222;
+  font-weight: 700;
+  text-align: center;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.tax-legalopinion-whatwedo-card-title {
+  font-size: 2rem;
+  font-family: 'Wolf', Arial, sans-serif;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.tax-legalopinion-whatwedo-card-desc {
+  font-size: 1.08rem;
+  color: #19345c;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.tax-legalopinion-whatwedo-card:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.13);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.tax-admin-section {
+  background: #f6f6f8;
+  padding: 80px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tax-admin-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tax-admin-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 700;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.tax-admin-label-line {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background: var(--secondary-color);
+  border-radius: 2px;
+}
+
+.tax-admin-title {
+  font-size: 3.2rem;
+  font-family: 'Wolf', Arial, sans-serif;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.tax-admin-underline {
+  width: 100px;
+  height: 4px;
+  background: var(--secondary-color);
+  margin: 18px auto 32px auto;
+  border-radius: 2px;
+}
+
+.tax-admin-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tax-admin-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  padding: 38px 24px;
+  font-size: 1.18rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  color: #19345c;
+  font-weight: 700;
+  text-align: center;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.tax-admin-card:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.13);
+  transform: translateY(-4px) scale(1.02);
+}
+
+@media (max-width: 900px) {
+  .tax-legalopinion-whatwedo-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px;
+  }
+  .tax-legalopinion-whatwedo-title {
+    font-size: 2rem;
+  }
+  .tax-legalopinion-whatwedo-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .tax-legalopinion-whatwedo-card {
+    font-size: 1rem;
+    padding: 18px 10px;
+    min-height: 60px;
+  }
+  .tax-legalopinion-whatwedo-card-title {
+    font-size: 1.2rem;
+  }
+  .tax-admin-title {
+    font-size: 2rem;
+  }
+  .tax-admin-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .tax-admin-card {
+    font-size: 1rem;
+    padding: 18px 10px;
+    min-height: 60px;
+  }
+}

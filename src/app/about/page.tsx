@@ -378,104 +378,106 @@ export default function AboutPage() {
                 <div className="team-card-role">Board of CIG</div>
               </div>
             </div>
-            
-                <div className="mb-20"></div>
+      </section>
+
+      <section>
+        <div className="mb-20"></div>
                 <div className="team-header">
                   <div className="team-underline"></div>
-                  <h2 className="team-title">Committee Of Expert</h2>
+                  <h2 className="team-title">Meet Your Expert</h2>
                 </div>
                 <div className="committee-expert-slider">
                     <div className="committee-expert-cards">
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/SATRIA-WIBAWA.jpg" alt="SATRIA WIBAWA, Ak., M.Ak., CERA., C.T.L.C" className="team-card-img" />
+                        <img src="/assets/images/tax/16. pak Satria web.png" alt="SATRIA WIBAWA, Ak., M.Ak., CERA., C.T.L.C" className="team-card-img" />
                         <div className="team-card-name">
                           <b>SATRIA WIBAWA,<br />Ak., M.Ak., CERA., C.T.L.C</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/YUDHA-AVIANTARA.jpg" alt="YUDHA AVIANTARA, SE" className="team-card-img" />
+                        <img src="/assets/images/tax/6. pak yudha web.png" alt="YUDHA AVIANTARA, SE" className="team-card-img" />
                         <div className="team-card-name">
                           <b>YUDHA AVIANTARA,<br />SE</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/SEPTIAN-FACHRIZAL.jpg" alt="SEPTIAN FACHRIZAL S.S.T, LL.M.Int.Tax." className="team-card-img" />
+                        <img src="/assets/images/tax/18. pak Septian web.png" alt="SEPTIAN FACHRIZAL S.S.T, LL.M.Int.Tax." className="team-card-img" />
                         <div className="team-card-name">
                           <b>SEPTIAN FACHRIZAL<br />S.S.T, LL.M.Int.Tax.</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/SULTONI.jpg" alt="SULTONI, S.E., MSE., MIDEC" className="team-card-img" />
+                        <img src="/assets/images/tax/19. pak Sultoni web.png" alt="SULTONI, S.E., MSE., MIDEC" className="team-card-img" />
                         <div className="team-card-name">
                           <b>SULTONI,<br />S.E., MSE., MIDEC</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/YATI-MULYATI.jpg" alt="YATI MULYATI, SE, M.Ak., Ak., CA" className="team-card-img" />
+                        <img src="/assets/images/tax/20. bu Yati.png" alt="YATI MULYATI, SE, M.Ak., Ak., CA" className="team-card-img" />
                         <div className="team-card-name">
                           <b>YATI MULYATI,<br />SE, M.Ak., Ak., CA</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/TEGUH-PUTRA.jpg" alt="TEGUH PUTRA SYAMSOERI, SE, MSc, APCTP" className="team-card-img" />
+                        <img src="/assets/images/tax/5. pak teguh web.png" alt="TEGUH PUTRA SYAMSOERI, SE, MSc, APCTP" className="team-card-img" />
                         <div className="team-card-name">
                           <b>TEGUH PUTRA SYAMSOERI,<br />SE, MSc, APCTP</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/YOSEP-POERNOMO.jpg" alt="YOSEP POERNOMO, S. Ak" className="team-card-img" />
+                        <img src="/assets/images/tax/4. pak yosep web.png" alt="YOSEP POERNOMO, S. Ak" className="team-card-img" />
                         <div className="team-card-name">
                           <b>YOSEP POERNOMO,<br />S. Ak</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/HARIS-BUDI.jpg" alt="Haris Budi Setiawan" className="team-card-img" />
+                        <img src="/assets/images/tax/3. pak haris web.png" alt="HARIS BUDI SETIAWAN" className="team-card-img" />
                         <div className="team-card-name">
                           <b>HARIS BUDI SETIAWAN</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/HELMI.jpg" alt="HELMI" className="team-card-img" />
+                        <img src="/assets/images/tax/22. pak helmi web.png" alt="HELMI" className="team-card-img" />
                         <div className="team-card-name">
                           <b>HELMI</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/LUKMAN-NUL-HAKIM.jpg" alt="LUKMAN NUL HAKIM. S.E." className="team-card-img" />
+                        <img src="/assets/images/tax/11. pak lukman web.png" alt="LUKMAN NUL HAKIM. S.E." className="team-card-img" />
                         <div className="team-card-name">
                           <b>LUKMAN NUL HAKIM.<br />S.E.</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/MIERZA.jpg" alt="MIERZA" className="team-card-img" />
+                        <img src="/assets/images/tax/9. pak mierza web.png" alt="MIERZA" className="team-card-img" />
                         <div className="team-card-name">
                           <b>MIERZA</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/DENDY-KRISTAWIGUNA.jpg" alt="Dendy Kristawiguna" className="team-card-img" />
+                        <img src="/assets/images/tax/12. pak dendy web.png" alt="Dendy Kristawiguna" className="team-card-img" />
                         <div className="team-card-name">
                           <b>DENDY KRISTAWIGUNA</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
-                        <img src="/assets/images/team/committee/MUHAMMAD-SALIM.jpg" alt="Muhammad Salim Noviansyah" className="team-card-img" />
+                        <img src="/assets/images/tax/13. pak salim web.png" alt="MUHAMMAD SALIM NOVIANSYAH" className="team-card-img" />
                         <div className="team-card-name">
                           <b>MUHAMMAD SALIM NOVIANSYAH</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       {/* Duplikat untuk seamless loop */}
                       <div className="team-card">
@@ -483,32 +485,32 @@ export default function AboutPage() {
                         <div className="team-card-name">
                           <b>SATRIA WIBAWA,<br />Ak., M.Ak., CERA., C.T.L.C</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
                         <img src="/assets/images/team/committee/YUDHA-AVIANTARA.jpg" alt="YUDHA AVIANTARA, SE" className="team-card-img" />
                         <div className="team-card-name">
                           <b>YUDHA AVIANTARA,<br />SE</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
                         <img src="/assets/images/team/committee/SEPTIAN-FACHRIZAL.jpg" alt="SEPTIAN FACHRIZAL S.S.T, LL.M.Int.Tax." className="team-card-img" />
                         <div className="team-card-name">
                           <b>SEPTIAN FACHRIZAL<br />S.S.T, LL.M.Int.Tax.</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                       <div className="team-card">
                         <img src="/assets/images/team/committee/SULTONI.jpg" alt="SULTONI, S.E., MSE., MIDEC" className="team-card-img" />
                         <div className="team-card-name">
                           <b>SULTONI,<br />S.E., MSE., MIDEC</b>
                         </div>
-                        <div className="team-card-role">Committee Of Expert</div>
+                        <div className="team-card-role">Tax Expert</div>
                       </div>
                     </div>
                   </div>
-              </section>
+      </section>
     
     <Footer />
     
