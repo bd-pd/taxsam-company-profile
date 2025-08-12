@@ -1,11 +1,43 @@
-import React from 'react';
+'use client'
+import React, { useState, useEffect } from 'react';
 import '../css/header.css';
+import '../css/responsif/navbar-responsif.css';
 
 interface HeaderProps {
   active?: string;
 }
 
 export default function Header({ active }: HeaderProps) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState<string | null>(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (menuOpen && !target.closest('.nav-links') && !target.closest('.hamburger')) {
+        setMenuOpen(false);
+        setDropdownOpen(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [menuOpen]);
+
+  // Handle dropdown toggle
+  const handleDropdownToggle = (name: string, event: React.MouseEvent) => {
+    event.preventDefault();
+    setDropdownOpen(dropdownOpen === name ? null : name);
+  };
+
+  // Handle submenu toggle
+  const handleSubmenuToggle = (name: string, event: React.MouseEvent) => {
+    event.preventDefault();
+    event.stopPropagation();
+    setDropdownOpen(dropdownOpen === name ? null : name);
+  };
+
   return (
     <header className="navbar">
       <div className="navbar-container">
@@ -14,40 +46,71 @@ export default function Header({ active }: HeaderProps) {
             <img src="/assets/images/TaxsamLogo.png" alt="TAXSAM.CO Logo" />
           </a>
         </div>
-        <nav className="nav-links">
-          <a href="/about" className={active === 'about' ? 'active' : ''}>ABOUT US</a>
-          <a href="/our_clients" className={active === 'clients' ? 'active' : ''}>OUR CLIENTS</a>
-          <div className="dropdown">
-            <a href="#" className={active === 'products' ? 'active' : ''}>
-              PRODUCTS & SERVICES <span style={{ fontSize: "10px" }}>&#x25BE;</span>
+        <button
+          className={`hamburger${menuOpen ? ' open' : ''}`}
+          aria-label="Toggle navigation"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span className="hamburger-bar"></span>
+          <span className="hamburger-bar"></span>
+          <span className="hamburger-bar"></span>
+        </button>
+        <nav className={`nav-links${menuOpen ? ' open' : ''}`}>
+          <div className="nav-section">
+            <a href="/about" className={active === 'about' ? 'active' : ''}>ABOUT US</a>
+          </div>
+          
+          <div className="nav-section">
+            <a href="/our_clients" className={active === 'clients' ? 'active' : ''}>OUR CLIENTS</a>
+          </div>
+
+          <div className={`dropdown nav-section${dropdownOpen === 'products' ? ' open' : ''}`}>
+            <a 
+              href="#" 
+              className={`dropdown-toggle ${active === 'products' ? 'active' : ''}`}
+              onClick={(e) => handleDropdownToggle('products', e)}
+            >
+              PRODUCTS & SERVICES <span className="arrow">&#x25BE;</span>
             </a>
             <div className="dropdown-content">
-              <div className="submenu">
-                <a href="#">
+              <div className={`submenu${dropdownOpen === 'products-taxam' ? ' open' : ''}`}>
+                <a 
+                  href="#" 
+                  className="submenu-toggle"
+                  onClick={(e) => handleSubmenuToggle('products-taxam', e)}
+                >
                   Taxam.co Services{" "}
-                  <span style={{ fontSize: "10px" }}>&#x25B6;</span>
+                  <span className="arrow">&#x25B6;</span>
                 </a>
                 <div className="sub-dropdown">
-                    <a href="/taxsam.co_service/tax_attorney">Tax Attorney</a>
-                  <a href="/taxsam.co_service/tax_legal_opinion">Tax Legal Opinion</a>
-                  <a href="#">Tax Compliance</a>
-                  <a href="#">Transfer Pricing</a>
+                  <a href="/services/tax-attorney">Tax Attorney</a>
+                  <a href="/services/tax-legal-opinion">Tax Legal Opinion</a>
+                  <a href="/services/tax-complience">Tax Compliance</a>
+                  <a href="/services/transfer-pricing">Transfer Pricing</a>
                 </div>
               </div>
-              <div className="submenu">
-                <a href="#">
+              <div className={`submenu${dropdownOpen === 'products-bigsam' ? ' open' : ''}`}>
+                <a 
+                  href="#" 
+                  className="submenu-toggle"
+                  onClick={(e) => handleSubmenuToggle('products-bigsam', e)}
+                >
                   Bigsam.co Services{" "}
-                  <span style={{ fontSize: "10px" }}>&#x25B6;</span>
+                  <span className="arrow">&#x25B6;</span>
                 </a>
                 <div className="sub-dropdown">
                   <a href="#">Payroll Service</a>
                   <a href="#">Accounting</a>
                 </div>
               </div>
-              <div className="submenu">
-                <a href="#">
+              <div className={`submenu${dropdownOpen === 'products-digital' ? ' open' : ''}`}>
+                <a 
+                  href="#" 
+                  className="submenu-toggle"
+                  onClick={(e) => handleSubmenuToggle('products-digital', e)}
+                >
                   Products Digital{" "}
-                  <span style={{ fontSize: "10px" }}>&#x25B6;</span>
+                  <span className="arrow">&#x25B6;</span>
                 </a>
                 <div className="sub-dropdown">
                   <a href="#">Tax Learning Center</a>
@@ -63,9 +126,14 @@ export default function Header({ active }: HeaderProps) {
               </div>
             </div>
           </div>
-          <div className="dropdown">
-            <a href="#" className={active === 'career' ? 'active' : ''}>
-              TAXSAM CAREER <span style={{ fontSize: "10px" }}>&#x25BE;</span>
+
+          <div className={`dropdown nav-section${dropdownOpen === 'career' ? ' open' : ''}`}>
+            <a 
+              href="#" 
+              className={`dropdown-toggle ${active === 'career' ? 'active' : ''}`}
+              onClick={(e) => handleDropdownToggle('career', e)}
+            >
+              TAXSAM CAREER <span className="arrow">&#x25BE;</span>
             </a>
             <div className="dropdown-content">
               <div className="submenu">
@@ -73,7 +141,10 @@ export default function Header({ active }: HeaderProps) {
               </div>
             </div>
           </div>
-          <a href="#" className={active === 'insight' ? 'active' : ''}>INSIGHT</a>
+
+          <div className="nav-section">
+            <a href="#" className={active === 'insight' ? 'active' : ''}>INSIGHT</a>
+          </div>
         </nav>
         <div className="login-btn">
           <a href="#">LOGIN</a>
@@ -82,3 +153,4 @@ export default function Header({ active }: HeaderProps) {
     </header>
   );
 }
+

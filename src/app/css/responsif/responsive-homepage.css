@@ -1,0 +1,174 @@
+/* Hero Section */
+@media (max-width: 900px) {
+    .hero {
+        min-height: 60vh;
+        padding: 0;
+    }
+    .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw !important;
+        height: 100vh !important;
+        min-height: 100vh;
+        max-height: 100vh;
+        object-fit: cover;
+        }
+        .hero-content {
+        padding: 0 19px;
+        top: 40%;
+        left: -30%;
+        transform: translate(-40%, -40%);
+        max-width: 100vw;
+        }
+        .hero-content h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 18px;
+        }
+    .cta-button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px 0;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    .book-button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px 0;
+        margin-bottom: 8px;
+        text-align: center;
+        margin-left:1px;
+    }
+    .hero-footer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .hero-footer-icons {
+        gap: 10px;
+    }
+    .hero-footer-text {
+        font-size: 1rem;
+        flex-direction: row;
+        gap: 6px;
+        align-items: center;
+        margin-left: -6px;
+    }
+}
+
+/* Services Section */
+@media (max-width: 900px) {
+  .services-section {
+    padding: 24px 0 40px 0;
+  }
+  .services-header-row {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .services-title {
+    font-size: 1.3rem;
+  }
+  .services-subtitle {
+    font-size: 1rem;
+  }
+  .services-cards {
+    flex-direction: column;
+    gap: 18px;
+    align-items: stretch;
+  }
+  .services-card {
+    min-width: 0;
+    max-width: 100%;
+    padding: 12px 8px;
+  }
+  .services-card-img-container {
+    height: 120px;
+  }
+  .services-card-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* About Highlight Section */
+@media (max-width: 900px) {
+  .about-highlight-section {
+    padding: 24px 0;
+  }
+  .about-highlight-title-big {
+    font-size: 1.3rem;
+  }
+  .about-highlight-desc {
+    font-size: 1rem;
+  }
+  .about-highlight-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+
+/* Product Section */
+@media (max-width: 900px) {
+  .product-section {
+    padding: 24px 0;
+  }
+  .product-header .services-title {
+    font-size: 1.3rem;
+  }
+  .product-header .services-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* TLC Section */
+@media (max-width: 900px) {
+  .tlc-section {
+    min-height: 220px;
+    height: 32vh;
+    max-height: 320px;
+    padding: 0;
+  }
+  .tlc-bg-video {
+    height: 32vh !important;
+    min-height: 120px;
+    max-height: 320px;
+  }
+  .tlc-content {
+    padding: 0 12px;
+    max-width: 100vw;
+  }
+  .tlc-title-big {
+    font-size: 1.3rem;
+  }
+  .tlc-desc {
+    font-size: 1rem;
+  }
+  .tlc-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+  .tlc-live-badge {
+    font-size: 0.9rem;
+    padding: 4px 10px;
+  }
+}
+
+/* General Utility */
+@media (max-width: 900px) {
+  .services-brand-line,
+  .services-header-left,
+  .services-header-right {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .services-header-row,
+  .product-header .services-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

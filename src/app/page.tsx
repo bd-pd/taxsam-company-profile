@@ -1,5 +1,6 @@
 'use client'
 import './css/index.css';
+import './css/responsif/responsive-homepage.css';
 import Script from 'next/script';
 import Footer from './global/Footer';
 import Header from './global/header';

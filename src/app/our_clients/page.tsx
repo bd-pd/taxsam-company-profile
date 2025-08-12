@@ -1,6 +1,10 @@
+"use client";
 import Footer from '../global/Footer';
 import Header from '../global/header';
 import '../css/our_clients.css';
+import ClientsPartnerLegal from './clients_partner_legal';
+
+
 
 export default function OurClientsPage() {
   return (
@@ -15,7 +19,7 @@ export default function OurClientsPage() {
             </h1>
           </div>
         </section>
-        {/* ...content lainnya... */}
+        <ClientsPartnerLegal />
       </main>
       <Footer />
     </div>
