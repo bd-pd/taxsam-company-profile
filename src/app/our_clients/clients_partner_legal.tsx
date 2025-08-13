@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { CiFilter } from "react-icons/ci";
 import { IoChatboxOutline } from "react-icons/io5";
+import { BsFillChatTextFill } from "react-icons/bs";
 
 interface ClientItem {
   name: string;
@@ -97,7 +98,7 @@ else if (activeTab === 'legals') data = LEGALS;
               Partnerships For Authentic Experiences.
             </div>
             <a href="#" className="clients-partnership-btn">
-              <span role="img" aria-label="chat"><IoChatboxOutline /></span> TALK TO US
+              <span role="img" aria-label="chat"><BsFillChatTextFill /></span> TALK TO US
             </a>
           </div>
         </aside>

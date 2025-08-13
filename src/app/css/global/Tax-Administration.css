@@ -1,0 +1,90 @@
+.tax-admin-section {
+  background: #fff;
+  width: 100%;
+  padding: 0;
+}
+
+.tax-admin-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 24px 60px 24px;
+}
+
+.tax-admin-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.tax-admin-offerings-label {
+  color: #222;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.tax-admin-offerings-label:before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: #fcb006;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.tax-admin-offerings-label:after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: #fcb006;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.tax-admin-title {
+  font-family: 'Wolf', Arial, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #222;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 6px 16px #0001;
+  margin-bottom: 10px;
+}
+
+.tax-admin-underline {
+  width: 90px;
+  height: 5px;
+  background: #fcb006;
+  border-radius: 2px;
+  margin: 0 auto 0 auto;
+}
+
+.tax-admin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 38px;
+}
+
+.tax-admin-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,0.10);
+  padding: 38px 24px;
+  font-size: 1.18rem;
+  color: #2a3240;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+}

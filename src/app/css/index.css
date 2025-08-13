@@ -503,7 +503,7 @@ body {
 .about-highlight-section {
   position: relative;
   width: 100%;
-  min-height: 880px;
+  min-height: 580px;
   background: transparent;
   display: flex;
   align-items: center;

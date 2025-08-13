@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import '../css/header.css';
 import '../css/responsif/navbar-responsif.css';
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 
 interface HeaderProps {
   active?: string;
@@ -69,8 +71,12 @@ export default function Header({ active }: HeaderProps) {
               href="#" 
               className={`dropdown-toggle ${active === 'products' ? 'active' : ''}`}
               onClick={(e) => handleDropdownToggle('products', e)}
+              style={{ display: 'flex', alignItems: 'center', gap: '0.5em' }}
             >
-              PRODUCTS & SERVICES <span className="arrow">&#x25BE;</span>
+              PRODUCTS & SERVICES
+              <span className="arrow" style={{ fontSize: '0.7em', display: 'flex', alignItems: 'center' }}>
+              <IoIosArrowDown style={{ verticalAlign: 'middle' }} />
+              </span>
             </a>
             <div className="dropdown-content">
               <div className={`submenu${dropdownOpen === 'products-taxam' ? ' open' : ''}`}>
@@ -80,7 +86,9 @@ export default function Header({ active }: HeaderProps) {
                   onClick={(e) => handleSubmenuToggle('products-taxam', e)}
                 >
                   Taxam.co Services{" "}
-                  <span className="arrow">&#x25B6;</span>
+                  <span className="arrow" style={{ fontSize: '0.7em' }}>
+                    <IoIosArrowForward style={{ verticalAlign: 'middle' }} />
+                  </span>
                 </a>
                 <div className="sub-dropdown">
                   <a href="/services/tax-attorney">Tax Attorney</a>
@@ -96,7 +104,9 @@ export default function Header({ active }: HeaderProps) {
                   onClick={(e) => handleSubmenuToggle('products-bigsam', e)}
                 >
                   Bigsam.co Services{" "}
-                  <span className="arrow">&#x25B6;</span>
+                  <span className="arrow" style={{ fontSize: '0.7em' }}>
+                    <IoIosArrowForward style={{ verticalAlign: 'middle' }} />
+                  </span>
                 </a>
                 <div className="sub-dropdown">
                   <a href="#">Payroll Service</a>
@@ -110,12 +120,14 @@ export default function Header({ active }: HeaderProps) {
                   onClick={(e) => handleSubmenuToggle('products-digital', e)}
                 >
                   Products Digital{" "}
-                  <span className="arrow">&#x25B6;</span>
+                  <span className="arrow" style={{ fontSize: '0.7em' }}>
+                    <IoIosArrowForward style={{ verticalAlign: 'middle' }} />
+                  </span>
                 </a>
                 <div className="sub-dropdown">
-                  <a href="#">Tax Learning Center</a>
-                  <a href="#">Tax Base</a>
-                  <a href="#">
+                  <a href="/product/taxsam-learning-center">Tax Learning Center</a>
+                  <a href="/product/taxbase">Tax Base</a>
+                  <a href="/product/business-learning-center">
                     <b>
                       Business Learning Center
                       <br />
@@ -132,8 +144,12 @@ export default function Header({ active }: HeaderProps) {
               href="#" 
               className={`dropdown-toggle ${active === 'career' ? 'active' : ''}`}
               onClick={(e) => handleDropdownToggle('career', e)}
+              style={{ display: 'flex', alignItems: 'center', gap: '0.5em' }}
             >
-              TAXSAM CAREER <span className="arrow">&#x25BE;</span>
+              TAXSAM CAREER 
+              <span className="arrow" style={{ fontSize: '0.7em', display: 'flex', alignItems: 'center' }}>
+                <IoIosArrowDown style={{ verticalAlign: 'middle' }} />
+              </span>
             </a>
             <div className="dropdown-content">
               <div className="submenu">
@@ -143,7 +159,7 @@ export default function Header({ active }: HeaderProps) {
           </div>
 
           <div className="nav-section">
-            <a href="#" className={active === 'insight' ? 'active' : ''}>INSIGHT</a>
+            <a href="/insight" className={active === 'insight' ? 'active' : ''}>INSIGHT</a>
           </div>
         </nav>
         <div className="login-btn">

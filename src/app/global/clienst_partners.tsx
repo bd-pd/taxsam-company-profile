@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/global/clients_partners.css';
+import '../css/responsif/responsive-homepage.css';
 
 export default function ClientsPartners() {
   return (

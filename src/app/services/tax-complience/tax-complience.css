@@ -1,0 +1,405 @@
+.tax-complience-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.tax-complience-hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/modern-business.jpg') center center/cover no-repeat;
+    background-color: #222;
+    filter: brightness(0.55);
+    z-index: 1;
+}
+
+.tax-complience-hero-content {
+    position: relative;
+    z-index: 2;
+    margin-left: 10vw;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.tax-complience-hero-title {
+    font-family: 'Wolf', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+.tax-complience-hero-subtitle {
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.tax-complience-hero-desc {
+  font-size: 1.1rem;
+  color: #eee;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.tax-complience-hero-actions {
+  display: flex;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.tax-complience-btn {
+  display: inline-block;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 14px 38px;
+  border-radius: 4px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.tax-complience-btn.primary {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.tax-complience-btn.primary:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
+
+.tax-complience-btn.secondary {
+  background: transparent;
+  color: #fcb006;
+  border: 2px solid #fcb006;
+}
+
+.tax-complience-btn.secondary:hover {
+  background: #fcb006;
+  color: #fff;
+}
+
+.tax-complience-whatwedo-section {
+  background: #fff;
+  width: 100%;
+  padding: 0;
+}
+
+.tax-complience-whatwedo-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 0 auto; /* Ubah margin-top dari 60px menjadi 0 */
+  padding: 0 24px 60px 24px;
+}
+
+.tax-complience-whatwedo-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 38px;
+  gap: 38px;
+}
+
+.tax-complience-whatwedo-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0; /* pastikan tidak ada margin bawah */
+}
+
+.taxsamco-bar {
+    display: inline-block;
+    width: 120px;
+    height: 3px;
+    background: #fcb006;
+    border-radius: 2px;
+    margin-top: 100px; /* Tambahkan jarak dari atas */
+}
+
+.taxsamco-label {
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #222;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-top: 100px; /* Tambahkan jarak dari atas */
+}
+
+.tax-complience-whatwedo-title {
+  font-family: 'Wolf', Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #222;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #fff2;
+  margin-left: 200px;
+   margin-top: 90px;
+}
+
+.tax-complience-whatwedo-subtitle {
+  font-size: 1.3rem;
+  color: #444;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 6px;
+  text-align: center;
+  margin-left: 300px;
+
+}
+
+.tax-complience-whatwedo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.tax-complience-whatwedo-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,0.08);
+  padding: 32px 28px;
+  font-size: 1.08rem;
+  color: #222;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tax-complience-whatwedo-card ul {
+  padding-left: 22px;
+  margin: 0;
+}
+
+
+.tax-complience-whatwedo-card li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.tax-admin-section {
+  background: #fff;
+  width: 100%;
+  padding: 0;
+}
+
+.tax-admin-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 24px 60px 24px;
+}
+
+.tax-admin-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.tax-admin-offerings-label {
+  color: #222;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.tax-admin-offerings-label:before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: #fcb006;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.tax-admin-offerings-label:after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: #fcb006;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.tax-admin-title {
+  font-family: 'Wolf', Arial, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #222;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 6px 16px #0001;
+  margin-bottom: 10px;
+}
+
+.tax-admin-underline {
+  width: 90px;
+  height: 5px;
+  background: #fcb006;
+  border-radius: 2px;
+  margin: 0 auto 0 auto;
+}
+
+.tax-admin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 38px;
+}
+
+.tax-admin-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,0.10);
+  padding: 38px 24px;
+  font-size: 1.18rem;
+  color: #2a3240;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+}
+
+.tax-video-hero-section {
+  position: relative;
+  width: 100vw;
+  min-height: 420px;
+  height: 60vh;
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #000;
+}
+
+.tax-video-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.7;
+  filter: brightness(0.7) grayscale(0.1);
+}
+
+.tax-video-hero-content {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tax-video-hero-title {
+  color: #fff;
+  font-size: 3rem;
+  font-family: 'Wolf', Arial, sans-serif;
+  font-weight: 900;
+  margin-bottom: 18px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.tax-video-hero-subtitle {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+}
+
+.tax-video-hero-btn {
+  display: inline-block;
+  padding: 10px 32px;
+  border: 2px solid #fcb006;
+  color: #fcb006;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 8px;
+}
+
+.tax-video-hero-btn:hover {
+  background: #fcb006;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .tax-complience-whatwedo-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .tax-complience-whatwedo-card {
+    min-height: unset;
+    padding: 22px 14px;
+  }
+  .tax-complience-whatwedo-title {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 1100px) {
+  .tax-admin-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .tax-admin-grid {
+    grid-template-columns: 1fr;
+  }
+  .tax-admin-title {
+    font-size: 2rem;
+  }
+}
