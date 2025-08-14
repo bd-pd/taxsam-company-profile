@@ -6,7 +6,7 @@ export default function InternshipPage() {
     <>
       <Header active='career' />    
       <h1>Internship Opportunities</h1>
-      <p>Explore our internship programs and kickstart your career!</p>
+      <p>Exploree our internship programs and kickstart your career!</p>
       <Footer />
     </>
   );
