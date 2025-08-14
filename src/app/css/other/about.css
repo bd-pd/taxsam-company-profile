@@ -462,7 +462,7 @@
   max-width: 540px;   /* diperlebar */
   height: 420px;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 3px;
   background: #eee;
   display: flex;
   align-items: center;

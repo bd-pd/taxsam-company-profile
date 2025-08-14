@@ -77,8 +77,8 @@ body {
   flex: 1 1 auto;
   justify-content: center;
   align-items: center;
-  font-family: 'MyCustomFont', sans-serif;
-  font-weight: 300;
+  font-family: 'Lato', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -89,8 +89,8 @@ body {
   font-size: 14px;
   position: relative;
   padding: 8px 0;
-  font-family: 'MyCustomFont', sans-serif;
-  font-weight: 300;
+  font-family: 'Lato', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
 }
 
 .nav-links > a:hover,
@@ -120,8 +120,8 @@ body {
   opacity: 0; /* Initially hidden */
   transform: translateY(-10px); /* Start a bit above */
   transition: opacity 0.3s ease, transform 0.3s ease;
-  font-family: 'MyCustomFont', sans-serif;
-  font-weight: 300;
+  font-family: 'Lato', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
   font-size: 14px; /* Perkecil font */
 }
 
@@ -135,9 +135,9 @@ body {
   position: relative;
   padding: 8px 20px;
   cursor: pointer;
-  font-family: 'MyCustomFont', sans-serif;
-  font-weight: 300;
-  font-size: 13px; /* Perkecil font */
+  font-family: 'Lato', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px; /* Perkecil font */
 }
 
 .dropdown-content > .submenu > a {

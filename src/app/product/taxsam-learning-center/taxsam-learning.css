@@ -1,0 +1,1014 @@
+/* Hero Section */
+.tlc-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #222;
+  overflow: hidden;
+}
+
+.tlc-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.65;
+  filter: brightness(0.7);
+}
+
+.tlc-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin-left: 19vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tlc-hero-content .tlc-stats-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Geser ke kanan */
+  align-items: stretch;
+  gap: 0;
+  max-width: 100vw;
+  width: 100vw;
+  margin: 60px 0 0 0;
+  min-height: unset;
+  height: auto;
+}
+
+.tlc-hero-content .tlc-stats-card {
+    flex: 1 1 0;
+    background: rgba(34,34,34,0.55);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;   /* Lebih kecil */
+    max-width: 20px;   /* Lebih kecil */
+    min-height: 20px;   /* Lebih pendek */
+    padding: 8px 0;     /* Padding kecil */
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    text-align: center;
+}
+
+.tlc-hero-content .tlc-stats-card:not(:last-child) {
+  border-right: 2px solid rgba(255,255,255,0.12);
+}
+
+.tlc-hero-content .tlc-stats-value {
+  font-size: 1 rem; /* Lebih kecil */
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  font-family: 'Wolf', Arial, sans-serif;
+}
+
+.tlc-hero-content .tlc-stats-label {
+  font-size: 0.95rem; /* Lebih kecil */
+  font-weight: 400;
+  color: #eee;
+  opacity: 0.92;
+}
+
+.tlc-hero-content .tlc-stats-desc-card {
+  background: linear-gradient(90deg, #b97b1b 80%, #fcb006 100%);
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 12px;
+  max-width: 220px;
+}
+
+.tlc-hero-content .tlc-stats-title {
+  font-size: 1.05rem; /* Lebih kecil */
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #fff;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+}
+
+.tlc-hero-content .tlc-stats-desc {
+  font-size: 0.92rem; /* Lebih kecil */
+  color: #fff;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  opacity: 0.96;
+}
+
+.tlc-hero-label {
+  color: #fcb006;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+
+.tlc-hero-title {
+  font-family: 'Wolf', Arial, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 18px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.tlc-hero-desc {
+    color: #eee;
+    font-size: 1.18rem;
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 32px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.tlc-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fcb006;
+  color: #fff;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  position: relative;
+  margin: 0;
+}
+
+.tlc-hero-btn:hover {
+  background:var(--primary-color);
+  color: #fff;
+}
+
+.tlc-hero-live-badge {
+    display: inline-block;
+    background: red;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 4px 18px;
+    position: absolute;
+    top: 32px;
+    right: -580px; /* Kurangi dari 48px ke 16px agar lebih ke kanan */
+    letter-spacing: 0.08em;
+    vertical-align: middle;
+    z-index: 3;
+    animation: tlc-live-badge-pulse 1.2s infinite alternate;
+}
+
+@keyframes tlc-live-badge-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255,0,0,0.7);
+        transform: scale(1);
+    }
+    100% {
+        box-shadow: 0 0 16px 8px rgba(255,0,0,0.3);
+        transform: scale(1.08);
+    }
+}
+
+.tlc-hero-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .tlc-hero-content {
+    margin-left: 0;
+    max-width: 100vw;
+    padding: 32px 16px;
+  }
+  .tlc-hero-title {
+    font-size: 2.1rem;
+  }
+  .tlc-hero-content .tlc-stats-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  .tlc-hero-content .tlc-stats-card, 
+  .tlc-hero-content .tlc-stats-desc-card {
+    border-right: none !important;
+    border-bottom: 2px solid rgba(255,255,255,0.12);
+    align-items: center;
+    text-align: center;
+    padding-left: 18px;
+  }
+  .tlc-hero-content .tlc-stats-card:last-child, 
+  .tlc-hero-content .tlc-stats-desc-card:last-child {
+    border-bottom: none !important;
+  }
+  .tlc-hero-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* Stats Section */
+.tlc-stats-section {
+  width: 100%;
+  background: transparent;
+  margin-top: -120px;
+  position: relative;
+  z-index: 3;
+}
+
+.tlc-stats-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tlc-stats-card {
+  flex: 1 1 0;
+  background: rgba(34,34,34,0.55);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  padding: 32px 18px;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  text-align: center;
+}
+
+.tlc-stats-card:not(:last-child) {
+  border-right: 2px solid rgba(255,255,255,0.12);
+}
+
+.tlc-stats-value {
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  font-family: 'Wolf', Arial, sans-serif;
+}
+
+.tlc-stats-label {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #eee;
+  opacity: 0.92;
+}
+
+.tlc-stats-desc-card {
+  background: linear-gradient(90deg, #b97b1b 80%, #fcb006 100%);
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 32px;
+}
+
+.tlc-stats-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+}
+
+.tlc-stats-desc {
+  font-size: 1.08rem;
+  color: #fff;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  opacity: 0.96;
+}
+
+.tlc-stats-inline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: 24px;
+}
+
+.tlc-stats-inline .tlc-stats-card {
+  background: rgba(34,34,34,0.55);
+  color: #fff;
+  border-radius: 6px;
+  min-width: 90px;
+  max-width: 120px;
+  min-height: 36px;
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  text-align: center;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.tlc-stats-inline .tlc-stats-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-family: 'Wolf', Arial, sans-serif;
+}
+
+.tlc-stats-inline .tlc-stats-label {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #eee;
+  opacity: 0.92;
+}
+
+@media (max-width: 900px) {
+  .tlc-stats-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  .tlc-stats-card, .tlc-stats-desc-card {
+    border-right: none !important;
+    border-bottom: 2px solid rgba(255,255,255,0.12);
+    align-items: center;
+    text-align: center;
+    padding-left: 18px;
+  }
+  .tlc-stats-card:last-child, .tlc-stats-desc-card:last-child {
+    border-bottom: none !important;
+  }
+  
+  .tlc-stats-inline {
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 0;
+    margin-top: 12px;
+    align-items: flex-start;
+  }
+}
+
+/* Testimonials Section */
+.tlc-testimonials-section {
+  background: #fff;
+  padding: 80px 0;
+  position: relative;
+}
+
+.tlc-testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tlc-testimonials-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tlc-testimonials-label {
+  color: #fcb006;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+}
+
+.tlc-testimonials-title {
+  font-family: 'Wolf', Arial, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #222;
+  margin: 0 0 15px 0;
+  line-height: 1.1;
+}
+
+.tlc-testimonials-bar {
+  width: 80px;
+  height: 4px;
+  background: #fcb006;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.tlc-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.tlc-testimonial-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tlc-testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.tlc-testimonial-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.tlc-testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tlc-testimonial-card:hover .tlc-testimonial-image img {
+  transform: scale(1.05);
+}
+
+.tlc-testimonial-content {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tlc-testimonial-stars {
+  color: #fcb006;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.tlc-testimonial-text {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.tlc-testimonial-author {
+  margin-top: auto;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.tlc-author-name {
+  font-weight: 700;
+  color: #222;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.tlc-author-role {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .tlc-testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .tlc-testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tlc-testimonials-section {
+    padding: 60px 0;
+  }
+  
+  .tlc-testimonials-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Welcome Section */
+.tlc-welcome-section {
+  width: 100%;
+  background: #fff;
+  padding: 64px 0;
+}
+
+.tlc-welcome-section .tlc-welcome-container {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.tlc-welcome-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tlc-welcome-title {
+  font-family: 'Wolf', Arial, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 18px;
+  line-height: 1.1;
+}
+
+.tlc-welcome-desc {
+  color: #222;
+  font-size: 1.13rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.tlc-welcome-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tlc-welcome-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 20px 32px rgba(0,0,0,0.13);
+}
+
+.tlc-welcome-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .tlc-welcome-section .tlc-welcome-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .tlc-welcome-right {
+    justify-content: flex-start;
+  }
+  .tlc-welcome-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tlc-welcome-section .tlc-welcome-container {
+    padding: 0 8px;
+  }
+  .tlc-welcome-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* Why Join Section */
+.tlc-whyjoin-section {
+  width: 100%;
+  background: #fff;
+  padding: 48px 0 32px 0;
+}
+
+.tlc-whyjoin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.tlc-whyjoin-title {
+  font-family: 'Wolf', Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #222;
+  text-align: center;
+  margin-bottom: 48px;
+  letter-spacing: 0.01em;
+}
+
+.tlc-whyjoin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.tlc-whyjoin-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+  padding: 36px 28px 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 260px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+}
+
+.tlc-whyjoin-card.highlight {
+  background: #F6A100;
+  color: #fff;
+  box-shadow: 0 12px 32px rgba(246,161,0,0.13);
+}
+
+.tlc-whyjoin-card.highlight .tlc-whyjoin-card-title,
+.tlc-whyjoin-card.highlight .tlc-whyjoin-card-desc {
+  color: #fff;
+}
+
+.tlc-whyjoin-card.highlight .tlc-whyjoin-card-bar {
+  background: #fff;
+}
+
+.tlc-whyjoin-card:hover {
+  box-shadow: 0 16px 40px rgba(246,161,0,0.18);
+  transform: translateY(-6px) scale(1.02);
+}
+
+.tlc-whyjoin-icon {
+  margin-bottom: 8px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.tlc-whyjoin-card-title {
+  font-family: 'Wolf', Arial, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+
+.tlc-whyjoin-card-bar {
+  width: 32px;
+  height: 4px;
+  background: #F6A100;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+
+.tlc-whyjoin-card-desc {
+  color: #444;
+  font-size: 1rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .tlc-whyjoin-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tlc-whyjoin-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .tlc-whyjoin-title {
+    font-size: 1.5rem;
+    margin-bottom: 28px;
+  }
+  .tlc-whyjoin-card {
+    padding: 24px 14px 20px 14px;
+    min-height: unset;
+  }
+}
+
+/* CTA Bar */
+.tlc-cta-bar {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 0;
+ 
+  display: flex;
+  justify-content: center;
+}
+
+.tlc-cta-bar-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 32px 40px;
+  gap: 0;
+}
+
+.tlc-cta-bar-desc {
+  flex: 1 1 0;
+  color: #a0a4b0;
+  font-size: 1.08rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-right: 32px;
+}
+
+.tlc-cta-bar-divider {
+  width: 3px;
+  height: 70px;
+  background: #F6A100;
+  border-radius: 2px;
+  margin: 0 32px 0 0;
+  display: block;
+}
+
+.tlc-cta-bar-btn {
+  display: inline-flex;
+  align-items: center;
+  background: #F6A100;
+  color: #fff;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2px;
+  padding: 18px 38px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 8px rgba(246,161,0,0.08);
+  letter-spacing: 0.02em;
+}
+
+.tlc-cta-bar-btn:hover {
+  background: #d98c00;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .tlc-cta-bar-content {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px 12px;
+    gap: 18px;
+  }
+  .tlc-cta-bar-desc {
+    padding-right: 0;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .tlc-cta-bar-divider {
+    display: none;
+  }
+  .tlc-cta-bar-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Pricing & Package Section */
+.tlc-pricing-section {
+  width: 100%;
+  background: #fff;
+  padding: 32px 0 48px 0;
+}
+
+.tlc-pricing-title {
+  text-align: center;
+  font-family: 'Wolf', Arial, sans-serif;
+  font-size: 2.7rem;
+  font-weight: 900;
+  margin-bottom: 38px;
+  letter-spacing: 0.01em;
+}
+
+.tlc-pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.tlc-pricing-card {
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+  width: 440px;
+  min-width: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 32px 0;
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.tlc-pricing-card.yearly {
+  border-top: 8px solid #fcb006;
+  background: #fff;
+}
+
+.tlc-pricing-card.monthly {
+  border-top: 8px solid #888;
+  background: #f7f7f7;
+}
+
+.tlc-pricing-card-header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 28px 32px 18px 32px;
+  background: transparent;
+  border-radius: 10px 10px 0 0;
+  min-height: 70px;
+}
+
+.tlc-pricing-card-title {
+  font-family: 'Wolf', Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 2px;
+  letter-spacing: 0.01em;
+}
+
+.tlc-pricing-card.yearly .tlc-pricing-card-title {
+  color: #fff;
+}
+
+.tlc-pricing-card.monthly .tlc-pricing-card-title {
+  color: #fff;
+}
+
+.tlc-pricing-card-sub {
+  font-size: 1rem;
+  color: #fff;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+.tlc-pricing-card.yearly .tlc-pricing-card-header {
+  background: #fcb006;
+}
+
+.tlc-pricing-card.monthly .tlc-pricing-card-header {
+  background: #888;
+}
+
+.tlc-pricing-card-limited {
+  background: #ff7c00;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 4px 14px;
+  letter-spacing: 0.08em;
+  margin-left: 12px;
+  align-self: flex-start;
+  box-shadow: 0 2px 8px rgba(252,176,6,0.13);
+}
+
+.tlc-pricing-card-price {
+  font-size: 3.2rem;
+  font-family: 'Wolf', Arial, sans-serif;
+  font-weight: 900;
+  color: #222;
+  margin: 18px 0 0 0;
+  letter-spacing: 0.01em;
+}
+
+.tlc-pricing-card-duration {
+  font-size: 1.02rem;
+  color: #888;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 500;
+  margin-bottom: 18px;
+  letter-spacing: 0.08em;
+}
+
+.tlc-pricing-card-features {
+  list-style: none;
+  padding: 0 32px;
+  margin: 0 0 24px 0;
+  color: #222;
+  font-size: 1.04rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.tlc-pricing-card-features li {
+  margin-bottom: 6px;
+}
+
+.tlc-pricing-card-action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.tlc-pricing-card-btn {
+  background: #fcb006;
+  color: #fff;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-size: 1.13rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 38px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 8px rgba(252,176,6,0.08);
+  letter-spacing: 0.02em;
+}
+
+.tlc-pricing-card-btn.secondary {
+  background: #888;
+  color: #fff;
+}
+
+.tlc-pricing-card-btn.secondary:hover {
+  background: #666;
+}
+
+.tlc-pricing-card-btn:hover {
+  background: #d98c00;
+  color: #fff;
+}
+
+.tlc-pricing-card-note {
+  color: #888;
+  font-size: 0.98rem;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 12px;
+  text-align: center;
+  opacity: 0.95;
+}
+
+@media (max-width: 900px) {
+  .tlc-pricing-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .tlc-pricing-card {
+    width: 100%;
+    min-width: unset;
+    max-width: 390px;
+  }
+  .tlc-pricing-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tlc-pricing-section {
+    padding: 18px 0 24px 0;
+  }
+  .tlc-pricing-title {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+  .tlc-pricing-card-header {
+    padding: 18px 12px 12px 12px;
+    min-height: 50px;
+  }
+  .tlc-pricing-card-features {
+    padding: 0 12px;
+    font-size: 0.97rem;
+  }
+  .tlc-pricing-card-price {
+    font-size: 2.1rem;
+  }
+}

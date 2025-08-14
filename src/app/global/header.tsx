@@ -153,7 +153,7 @@ export default function Header({ active }: HeaderProps) {
             </a>
             <div className="dropdown-content">
               <div className="submenu">
-                <a href="#">Internship</a>
+                <a href="/internship">Internship</a>
               </div>
             </div>
           </div>
