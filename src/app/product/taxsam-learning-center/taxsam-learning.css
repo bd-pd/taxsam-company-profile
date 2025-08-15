@@ -305,6 +305,26 @@
   margin-left: 24px;
 }
 
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .tlc-stats-inline {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+    margin-top: 18px;
+  }
+  .tlc-stats-inline .tlc-stats-card {
+    display: none;
+  }
+  .tlc-stats-inline .tlc-stats-value {
+    font-size: 8px;
+  }
+  .tlc-stats-inline .tlc-stats-label {
+    font-size: 10px;
+  }
+}
+
 .tlc-stats-inline .tlc-stats-card {
   background: rgba(34,34,34,0.55);
   color: #fff;
